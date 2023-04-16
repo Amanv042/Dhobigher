@@ -1,0 +1,492 @@
+
+
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  min-height: 80px;
+}
+
+body {
+  position: relative;
+}
+
+.logo,
+.address-area,
+.contact,
+.timing {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.logo-title {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.img span,
+.img i {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+  color: var(--clr-theme);
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 99;
+}
+
+.navigation .container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hamburger-menu {
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.hamburger-menu .line {
+  height: 4px;
+  width: 100%;
+  background: var(--clr-theme);
+  border-radius: 1rem;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+nav li a {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #333;
+}
+
+nav li a:active {
+  color: var(--clr-theme);
+}
+
+nav li a:hover {
+  color: var(--clr-theme);
+}
+
+.hero-section {
+  color: #fff;
+  min-height: 550px;
+  background: url(./images/hero-image.jpg);
+  /* background-position: right; */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  max-width: 40%;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+.hero-content {
+  max-width: 50%;
+  margin-top: 0.5rem;
+}
+
+.hero-button {
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 10rem;
+  border: transparent;
+  padding: 0.8rem 2.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: all 250ms ease-in;
+  background: #fff;
+}
+
+.hero-button:hover {
+  background: #f0f0f0;
+  box-shadow: 0 0 2px black;
+}
+
+.how-we-work {
+  display: grid;
+  place-items: center;
+  min-height: 400px;
+  padding: 1rem;
+}
+
+.work-method {
+  padding: 1rem 0;
+}
+
+.work-main-title {
+  font-size: 1em;
+}
+
+.work-subtitle {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.work-titles,
+.step {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.step-number {
+  font-size: 3em;
+  color: var(--clr-theme);
+  opacity: 0.3;
+}
+
+.step-description span {
+  color: var(--clr-theme);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 300px;
+}
+
+.laundry-service,
+.dry-cleaning-service {
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.5rem;
+}
+
+.service-tagline {
+  color: var(--clr-theme);
+}
+
+.service-title {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.service-description p {
+  margin: 2rem 0;
+}
+
+.services-left-side {
+  padding: 0 1rem;
+}
+
+.services-right-side {
+  background: url(./images/services.jpg);
+  background-size: cover;
+  border-radius: 0.25rem;
+  background-position: center;
+}
+
+.why-choose-us {
+  padding: 2rem;
+}
+
+.all-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.wcu-titles,
+.feature {
+  padding: 1rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.feature img {
+  margin-right: 1rem;
+  aspect-ratio: 1;
+  width: 40px;
+}
+
+.feature-title {
+  font-size: 0.9em;
+}
+
+.feature-description {
+  font-size: 0.8em;
+  margin-top: 1rem;
+}
+
+.wcu-titles .sub-title {
+  color: var(--clr-theme);
+}
+
+.wcu-titles .main-title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.pricing-cards .card {
+  background: #f3f3f3;
+  padding: 2rem 3rem;
+  border-radius: 0.25rem;
+}
+
+.pricing-cards .card > div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 0.5rem;
+}
+
+.pricing-cards .card a {
+  display: block;
+  margin-top: 1rem;
+  color: #333;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--clr-theme);
+  border-radius: 0.25rem;
+  transition: 250ms ease-in;
+}
+
+.pricing-cards .card a:hover {
+  background: var(--clr-theme);
+  color: #fff;
+}
+
+.floating-contact {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  height: 60px;
+  aspect-ratio: 1;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.274);
+  display: grid;
+  place-items: center;
+  border-radius: 100vh;
+}
+
+.floating-contact i {
+  font-size: 2em;
+  color: var(--clr-theme);
+}
+
+.footer-content {
+  background: var(--clr-theme);
+  margin-top: 5rem;
+}
+
+.footer-content .container {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.about-us-footer,
+.quick-links,
+.feedback {
+  padding: 1rem 0;
+}
+
+.about-us-footer .logo {
+  font-size: 1.1rem;
+}
+
+.about-us-footer .footer-description {
+  margin-top: 1rem;
+  max-width: 60%;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+}
+.quick-links h3 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.quick-links a {
+  /* padding: 0.25rem 0.5rem; */
+  font-weight: 300;
+  color: #fff;
+  width: max-content;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+.quick-links a + a {
+  margin-top: 1rem;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (width < 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  header {
+    border-bottom: 0;
+  }
+
+  .header-container {
+    display: flex;
+    padding: 1rem 0;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    z-index: 10;
+    margin-right: 0.5rem;
+  }
+
+  .navigation .container {
+    padding: 0;
+  }
+
+
+  .address-area,
+  .contact,
+  .timing {
+    font-size: 1em;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    justify-content: space-between;
+    background: #fff;
+    width: 100%;
+    transform:scale(0) translateY(-200%);
+    transition: 500ms ease-in-out;
+    border-radius: 100vh;
+    z-index: -1;
+    transform-origin: top;
+  }
+  nav.active {
+    transform:scale(1) translateY(0%);
+    border-radius: 0;
+  }
+
+  .hero-title,
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section {
+    background-position: center;
+  }
+
+  .hero-button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navigation .container {
+    position: relative;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 0.5rem;
+  }
+
+  .about-content {
+    padding: 2rem 0;
+  }
+
+  /* For service area image */
+  .services-right-side {
+    display: none;
+  }
+
+  .steps,
+  .about-content,
+  .service-content,
+  .all-features,
+  .pricing-cards,
+  .footer-content .container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-footer,
+  .quick-links {
+    padding: 0;
+    display: flex;
+    margin: 2rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us-footer{
+    text-align: center;
+  }
+
+  .floating-contact {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  header {
+    display: none;
+  }
+
+  .navigation .container {
+    align-items: center;
+  }
+}
